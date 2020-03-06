@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alex Bar</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/neon.css">
+	<link rel="stylesheet" href="css/myStyle.css">
+	<script src="js/ingredientList.js"></script>
+
+
+	<script src="js/modernizr.js"></script>
+</head>
+
+<body data-hijacking="on" data-animation="fixed">
+	<!-- <div class="container-fluid">
+		<header class="row" style="background-color: black;">
+			<div class="col-2" style="height: 100px;"> 
+				<div id="container">
+					<p><a href="#" style="font-size: 55px;">ALEX BAR</a></p>
+			  	</div> 
+			</div>
+			<div class="col" style="height: 100px;"> 
+				<div id="container">
+					<p></p>
+			  	</div> 
+			</div>
+		</header> -->
+
+	<main class="row">
+
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="container-fluid">
+
+					<div class="row">
+
+						<div class="col" style="height: 700px;">
+							<img id="strDrinkThumb"
+								src="https:www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg">
+						</div>
+						<div class="col"
+							style=" overflow: auto; height: 700px; color: white; background-color: rgb(37, 37, 37); ">
+							<h1 id="strDrink">Margarita </h1>
+							<div class="row">
+								<div class="col-3">
+									<h4>Category: </h4>
+								</div>
+								<div class="col">
+									<p id="strCategory">Ordinary Drink</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<h4>Glass: </h4>
+								</div>
+								<div class="col">
+									<p id="strGlass">Cocktail glass</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<h4>Style: </h4>
+								</div>
+								<div class="col">
+									<p id="strIBA">Contemporary Classics</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<h4>Ingredient: </h4>
+								</div>
+								<ul id="ingredientsList" class="col">
+
+								</ul>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<h4>Instructions: </h4>
+								</div>
+								<div class="col">
+									<p id="strInstructions">Rub the rim of the glass with the lime slice to make the
+										salt stick to it. Take care to moisten only the outer rim and sprinkle the salt
+										on it. The salt should present to the lips of the imbiber and never mix into the
+										cocktail. Shake the other ingredients with ice, then carefully pour into the
+										glass.</p>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Modal End -->
+
+		<section id="section1" class="cd-section visible">
+			<div class="col" style="height: 100vh;">
+				<div>
+					<h1>What can I get for you?</h1>
+					<input id="drinkInput" placeholder="Type the drink name">
+					<button id="myBtn">Search</button>
+					<button onclick="drinkSearch()">Load Data</button>
+				</div>
+				<video poster="" id="bgvid" playsinline autoplay muted loop>
+					<source src="./img/Video01.mp4" type="video/webm">
+				</video>
+
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div id="byIng" class="col" style="height: 100vh;">
+				<h1>Search by Ingredient</h1>
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div class="col" style="height: 100vh;"></div>
+		</section>
+
+		<section class="cd-section">
+			<div class="col" style="height: 100vh;"></div>
+		</section>
+
+		<section class="cd-section">
+			<div class="col" style="height: 100vh;"></div>
+		</section>
+
+		<nav>
+			<ul id="navArrow" class="cd-vertical-nav">
+				<li><a href="#0" class="cd-prev inactive">Next</a></li>
+				<li><a href="#0" class="cd-next">Prev</a></li>
+			</ul>
+		</nav>
+		</div>
+
+	</main>
+	<!-- <script src="js/fetch.js"></script> -->
+	</div>
+
+
+
+	</div>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/velocity.ui.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script src="js/drinkSearch.js"></script>
+	
+</body>
+
+</html>
