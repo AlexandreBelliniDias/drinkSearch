@@ -43,18 +43,17 @@
 					<div class="row">
 
 						<div class="col" style="height: 700px;">
-							<img id="strDrinkThumb"
-								src="https:www.thecocktaildb.com/images/media/drink/wpxpvu1439905379.jpg">
+							<img id="strDrinkThumb"src="">
 						</div>
 						<div class="col"
 							style=" overflow: auto; height: 700px; color: white; background-color: rgb(37, 37, 37); ">
-							<h1 id="strDrink">Margarita </h1>
+							<h1 id="strDrink"></h1>
 							<div class="row">
 								<div class="col-3">
 									<h4>Category: </h4>
 								</div>
 								<div class="col">
-									<p id="strCategory">Ordinary Drink</p>
+									<p id="strCategory"></p>
 								</div>
 							</div>
 							<div class="row">
@@ -62,7 +61,7 @@
 									<h4>Glass: </h4>
 								</div>
 								<div class="col">
-									<p id="strGlass">Cocktail glass</p>
+									<p id="strGlass"></p>
 								</div>
 							</div>
 							<div class="row">
@@ -70,7 +69,7 @@
 									<h4>Style: </h4>
 								</div>
 								<div class="col">
-									<p id="strIBA">Contemporary Classics</p>
+									<p id="strIBA"></p>
 								</div>
 							</div>
 							<div class="row">
@@ -86,11 +85,7 @@
 									<h4>Instructions: </h4>
 								</div>
 								<div class="col">
-									<p id="strInstructions">Rub the rim of the glass with the lime slice to make the
-										salt stick to it. Take care to moisten only the outer rim and sprinkle the salt
-										on it. The salt should present to the lips of the imbiber and never mix into the
-										cocktail. Shake the other ingredients with ice, then carefully pour into the
-										glass.</p>
+									<p id="strInstructions"></p>
 								</div>
 							</div>
 
@@ -108,11 +103,12 @@
 
 		<section id="section1" class="cd-section visible">
 			<div class="col" style="height: 100vh;">
-				<div>
-					<h1>What can I get for you?</h1>
-					<input id="drinkInput" placeholder="Type the drink name">
-					<button id="myBtn">Search</button>
+				<div id="main">
+					<img src="./img/Logo2.png">
+					<h1 id="phrase">What can I get for you?</h1>
+					<input id="drinkInput"> <br>
 					<button onclick="drinkSearch()">Load Data</button>
+					<button  id="myBtn">Open Tab</button>
 				</div>
 				<video poster="" id="bgvid" playsinline autoplay muted loop>
 					<source src="./img/Video01.mp4" type="video/webm">

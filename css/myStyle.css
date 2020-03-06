@@ -133,4 +133,46 @@ video {
   text-decoration: none;
   cursor: pointer;
 }
+
+#main {
+  text-align: center;
+  margin-top: 0%;
+}
+
+#main #logo {
+  width: 400px;
+  margin-top: 10%;
+  border-radius: 400px;
+}
+
+#main h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+#main #drinkInput {
+  background-color: #747373;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 400px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px #000000;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+#main button {
+  background-color: #202020;
+  border: none;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#main button:hover {
+  background-color: #585858;
+}
 /*# sourceMappingURL=myStyle.css.map */

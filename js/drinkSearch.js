@@ -1,17 +1,16 @@
 drinkSearch = () =>{
-    console.log('hi')
     let drinkInput = document.getElementById('drinkInput').value;
     let url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + drinkInput;
-    alert('hi')
         fetch(url)
             .then((resp) => resp.json())
             .then(function (data) {
-                document.getElementById('strDrink').innerHTML = Object.values(data.drinks[1])
-                document.getElementById('strCategory').innerHTML = Object.values(data.drinks[10])
-                document.getElementById('strIBA').innerHTML = Object.values(data.drinks[11])
-                document.getElementById('strGlass').innerHTML = Object.values(data.drinks[13])
-                document.getElementById('strInstructions').innerHTML = Object.values(data.drinks[14])
-                document.getElementById('strDrinkThumb').src = Object.values(data.drinks[20])
+                document.getElementById('strDrink').innerHTML = data.drinks[0].strDrink;
+                console.log(Object.values(data.drinks[0].strDrink))
+                document.getElementById('strCategory').innerHTML = data.drinks[0].strCategory;
+                document.getElementById('strIBA').innerHTML = data.drinks[0].strIBA
+                document.getElementById('strGlass').innerHTML = data.drinks[0].strGlass
+                document.getElementById('strInstructions').innerHTML = data.drinks[0].strInstructions.replace('.', '<br>')
+                document.getElementById('strDrinkThumb').src = data.drinks[0].strDrinkThumb
                 for(i=21; i<36; i++){
                     if(Object.values(data.drinks[i] != null)){
                         let newIngredient = document.createElement('li')
@@ -40,7 +39,7 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick =  function() {
     modal.style.display = "block";
 }
 
