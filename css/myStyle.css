@@ -151,7 +151,7 @@ video {
 }
 
 #main #drinkInput {
-  background-color: #747373;
+  background-color: rgba(116, 115, 115, 0.514);
   border: none;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -164,7 +164,7 @@ video {
 }
 
 #main button {
-  background-color: #202020;
+  background-color: rgba(32, 32, 32, 0.616);
   border: none;
   font-size: 25px;
   color: white;
